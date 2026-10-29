@@ -118,7 +118,7 @@ class RandomAgent(tt.Client):
         """
         Optional: Runs when the session stops.
         """
-        if message == None:
+        if message is None:
             print(f"{self} has stopped.")
         else:
             print(f"{self} has stopped: \"{message}\"")
